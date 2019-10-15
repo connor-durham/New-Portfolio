@@ -1,97 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
-    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 </head>
 <body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#"></a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Connor Durham</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">I am an aspiring Web Developer with a passion for all things JavaScript</h5>
+      </div>
+      <div class="row center">
+        <h2 class="header col s12 light">Here are some of my projects!</h2>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
 
 
-<div id="bigcontainer" class="flex-container">
+  <div class="container">
+    <div class="section">
 
-        <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                  <h1 class="display-4">Connor Durham</h1>
-                  <p class="lead">I am a full stack web developer and accountant with knowledge in HTML, CSS, jQuery, Node.js, and more</p>
-                 
-                </div>
+      <!--   Icon Section   -->
+      <div class="row center">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <a href="https://connorlloyddeanmolly.herokuapp.com/" ><img src="./css/Pictures/beer1.png" id="beerpic" alt="" class=""></a>
+            <h5 class="center">Beer Frontier</h5>
 
+            <p class="light">We created this application using Google Maps and BreweryDB to help you find where your favorite beers are available</p>
+
+            <hr>
+
+            <a href="https://github.com/connor-durham/ConnorLloydDeanMolly" ><img src="./css/Pictures/github.svg" id="smallgithub" alt="" class="circle"></a>
+
+          </div>
         </div>
-    
-    
-        <div class="projects" class="flex-container">
-            Projects
-     
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            
+            <a href="https://connor-durham.github.io/ChrisConnorLLoydDylan/" ><img src="./css/Pictures/note.png" id="beerpic" alt="" class=""></a>
+  
+            <h5 class="center">Band-Aide</h5>
+
+            <p class="light">We created this tool to help music fans find all kinds of resources for their favorite artists</p>
+
+            <hr>
+
+            <a href="https://github.com/connor-durham/ChrisConnorLLoydDylan" ><img src="./css/Pictures/github.svg" id="smallgithub" alt="" class="circle"></a>
+          </div>
         </div>
 
-        <div id="projecttext" class="flex-container">
- 
+        <div class="col s12 m4">
+          <div class="icon-block">
 
-                <a href="https://connor-durham.github.io/ChrisConnorLLoydDylan/" ><img src="Pictures/band.jpg" class="projectpics" title="band" alt="band"></a>
+              <a href="" ><img src="./css/Pictures/react.png" id="beerpic" alt="" class=""></a>
 
 
-                <a href="https://connor-durham.github.io/Train-Scheduler/" ><img src="Pictures/train.jpg" class="projectpics" title="train" alt="train"></a>
+            <h5 class="center">React</h5>
+            <p class="light">This fully React-based project helped me master the fundamentals of React while also creating a uniquely usable Twitch application</p>
 
-                
-                <a href="https://connor-durham.github.io/Word-Guess-Game/" ><img src="Pictures/hangman.jpg" class="projectpics" title="hangman" alt="hangman"></a>
+            <hr>
 
+            <a href="" ><img src="./css/Pictures/github.svg" id="smallgithub" alt="" class="circle"></a>
+          </div>
         </div>
+      </div>
 
-        <div class="projects" class="flex-container">
-            Resume
+    </div>
+    <br><br>
+  </div>
 
-        </div>
-
-        <div id="resumetext" class="flex-container">
-                <img src="Pictures/resume.jpg" id="resumepic"></img>
-         </div>
-
-        <div class="projects" class="flex-container">
-            GitHub
-
-        </div>
-
-        <div id="githubtext" class="flex-container">
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row center">
+        <div class="col l6 s12 m6 center">
           
-                <a href="https://github.com/connor-durham" ><img src="Pictures/github.svg" id="githubpic" title="github" alt="github"></a>
-
-
-
-
-         </div>
-
-        <div class="projects" class="flex-container">
-            LinkedIn
+          <a href="https://github.com/connor-durham" ><img src="./css/Pictures/github.svg" id="githubpic" alt="" class="circle"></a>
 
         </div>
+        <div class="col l6 s12 m6 center">
 
-        <div id="linkedintext" class="flex-container">
-                <a href="https://www.linkedin.com/in/connordurham/" ><img src="Pictures/linkedin.png" id="linkedinpic" title="linkedin" alt="linkedin"></a>
+          <a href="https://www.linkedin.com/in/connordurham/" ><img src="./css/Pictures/linkedin.png" id="linkedinpic" alt="" class="circle"></a>
 
         </div>
+      </div>
+    </div>
+  </footer>
 
 
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 
-        
-
-     
-      
-          
-
-
- 
-          
-</div>
-
-    
-</body>
+  </body>
 </html>
